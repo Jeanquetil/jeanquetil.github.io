@@ -1,0 +1,58 @@
+html {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+ul.unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.card {
+  background-color: #04293A;
+  color: white;
+  padding: 1rem;
+}
+
+.card a {
+  color: white;
+}
+
+.card > * {
+  margin: 0;
+}
